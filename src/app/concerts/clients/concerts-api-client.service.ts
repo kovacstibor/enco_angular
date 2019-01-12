@@ -12,7 +12,9 @@ const concertListMock: ConcertListItemModel[] =
 
 const concertDeatilsMock: ConcertDetailsModel[] = 
 [
-
+    { ...concertListMock[0], teaserVideoUrl: 'https://www.youtube.com/watch?v=L21dXQMNOQs', ticketCategories: [{ id: 1, name: 'Eary Bird', unitPrice: 8000, limit: 1000}, { id: 2, name: 'Seat', unitPrice: 9000, limit: 10000}, { id: 3, name: 'Arena', unitPrice: 8500, limit: 2500}] },
+    { ...concertListMock[1], teaserVideoUrl: 'https://www.youtube.com/watch?v=D9_4lAtWPYg', ticketCategories: [{ id: 5, name: 'Eary Bird', unitPrice: 25000, limit: 10000}, { id: 5, name: 'At Location', unitPrice: 35000, limit: 6000}] },
+    { ...concertListMock[2], teaserVideoUrl: 'https://www.youtube.com/watch?v=cGlwkfEkWbc', ticketCategories: [{ id: 6, name: 'Eary Bird', unitPrice: 17000, limit: 1000}, { id: 7, name: 'Category A', unitPrice: 20000, limit: 5000}, { id: 8, name: 'Category A+', unitPrice: 23500, limit: 500}] }
 ];
 
 @Injectable()
