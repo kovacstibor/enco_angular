@@ -5,6 +5,7 @@ import { SharedModule } from '../shared/shared.module';
 import { ConcertListPageComponent } from './pages/concert-list.page.component';
 import { ConcertsApiClientService } from './clients/concerts-api-client.service';
 import { ConcertDetailsPageComponent } from './pages/concert-details.page.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { ConcertDetailsPageComponent } from './pages/concert-details.page.compon
   ],
   imports: [
     ConcertsRoutingModule,
-    SharedModule
+    SharedModule,
+    CommonModule
   ],
   providers: [
     ConcertsApiClientService

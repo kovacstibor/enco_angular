@@ -1,17 +1,19 @@
 <table>
-    <thead>
-        <tr>
-            <th>A</th>
-            <th>B</th>
-        </tr>
-    </thead>
     <tbody>
-        <tr>
-            <td>a</td>
-            <td>b</td>
-            
+        <tr *ngFor='let concert of concerts' class='concert-row'>
+            <td>
+                <img src='{{concert.imageUrl}}' width='100'/>
+            </td>
+            <td width='500'>
+                <h2><a routerLink='/concerts/{{concert.id}}'>{{concert.artist}}</a></h2>
+                <p><em>{{concert.date | dateToString}} {{concert.location}}</em></p>
+                <p>
+                    <span *ngFor='let tag of concert.tags'>
+                        <concert-tag [text]='tag'></concert-tag>
+                    </span>
+                </p>
+            </td>
         </tr>
     </tbody>
 </table>
-
 <a routerLink="/">Back to main page</a>

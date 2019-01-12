@@ -3,7 +3,8 @@ import { ConcertsApiClientService } from '../clients/concerts-api-client.service
 import { ConcertListItemModel } from '../models/concert-list.model';
 
 @Component({
-    templateUrl: './concert-list.page.component.html'
+    templateUrl: './concert-list.page.component.html',
+    styleUrls: ['./concert-list.page.component.scss']
 })
 export class ConcertListPageComponent implements OnInit 
 {
