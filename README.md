@@ -1,5 +1,8 @@
 # EncoAngular
 
+Simple sample application for learning/practicing angular. This application is a simple concert managemnet app. 
+Currently, one can browse the list of the avaible concerts and view the details of a selected concert.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.1.
 
 ## Development server
